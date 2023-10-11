@@ -6,10 +6,10 @@ using namespace std;
 void sort(int arr[], int i, int n)
 {
     int highestPos = i;
-    int highestNum = 0;
+    int highestNum = -1;
 
     for (int j = i; j < n; j++)
-        if (arr[j] > highestNum)
+        if (highestNum < 0 || arr[j] < highestNum)
         {
             highestPos = j;
             highestNum = arr[j];
