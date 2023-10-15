@@ -21,8 +21,5 @@ int main()
     cout << a << "\t" << b << "\t";
     fibonacci(0, 1, 38);
 
-    int x;
-    cin>>x;
-
     return 0;
 }
